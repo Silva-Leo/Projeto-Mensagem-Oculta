@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,28 @@
     <link rel="stylesheet" href="./index.css">
     <title>Decodifikator 3.000</title>
 </head>
+
 <body>
+
     <form id="submit">
-      <input type="text">
-      <select>
-          <option value= "CifraDeCesar">Cifra de césar</option>
-          <option value="base64">Base 64</option>
-
-      </select>
-
+        <div class="espaço1">
+            <input type="text" placeholder="Digite o texto">
+            <select>
+                <option value="CifraDeCesar">Cifra de césar</option>
+                <option value="Base64">Base 64</option>
+            </select>
+        </div>
+        <div class="espaço2">
+            <input type="radio" id="codificar" name="codificar"><label for="codificar">Codificar</label>
+        </div>
+        <div class="espaço2">
+            <input type="radio" id="decodificar" name="codificar"><label for="decodificar">Decodificar</label>
+        </div>
+        <div class="espaço3">
+            <input type="text" id="resultado pla" placeholder="Resultado">
+        </div>
     </form>
     <script src="./index.js"></script>
 </body>
+
 </html>

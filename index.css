@@ -1,0 +1,57 @@
+body{
+    background-image: url(fundoCod.png);
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    background-attachment: fixed;
+    color: blanchedalmond;
+    height: 100vh;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#submit{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height:60vh ;
+    width: 40vw;
+    margin-bottom: 10%;
+    align-items: center;
+}
+.espaço1{
+    height: 50%;
+    width: 30%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+
+}
+.espaço2{
+    width: 90%;
+    text-align: center;
+}
+.espaço3{
+    width: 30%;
+}
+
+input[type=text] {
+    border: 0;
+    border-bottom: 2px solid #8d8c8c;
+    outline: none;
+    border-radius: 5em;
+    padding: 3%;
+}
+input[type=radio]{
+    width: 20px;
+    height: 20px;
+    border: solid 2px;
+    vertical-align: bottom;
+}
+::placeholder{
+    text-align: center;
+}
