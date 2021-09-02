@@ -21,16 +21,17 @@
             <div id="incremento">
                 <input type="number" id="incrementoNumber">
             </div>
-            
+
         </div>
         <div class="espaço2">
-            <input type="radio" id="codificar" name="codificar"><label for="codificar">Codificar</label>
+            <input type="radio" id="codificar" name="codificar" checked ="True"><label for="codificar">Codificar</label>
         </div>
         <div class="espaço2">
             <input type="radio" id="decodificar" name="codificar"><label for="decodificar">Decodificar</label>
         </div>
         <div class="espaço3">
-            <input type="text" id="resultado" placeholder="Resultado">
+            <button id="botao" onclick="clicou()">Resultado</button>
+            <input type="text" id="resultado">
         </div>
     </form>
     <script src="./index.js"></script>

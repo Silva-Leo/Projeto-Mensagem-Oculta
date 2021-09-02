@@ -1,5 +1,10 @@
+var form = document.getElementById('submit');
 var textoNormal = document.getElementById('textoNormal');
-var incremento = document.getElementById('incremento')
+var incremento = document.getElementById('incremento');
+var codificar = document.getElementById('codificar');
+var decodificar = document.getElementById('decodificar');
+var resultado = document.getElementById('resultado');
+var botao = document.getElementById('botao');
 
 var select = document.getElementById('select');
 select.addEventListener("change", function (evento) {
@@ -10,24 +15,48 @@ select.addEventListener("change", function (evento) {
         incremento.style = 'display: block';
     }
 });
+function clicou(){
+    if(select.value == "Base64"){
+        base64();
+    } else {
+        cifraCesar();
+    }
+};
+submit.addEventListener('submit',function(event){
+    event.preventDefault();
+});
+
+
+function cifraCesar(){
+    console.log("hey");
+    if (codificar.checked == true){
+        codificarCesar(textoNormal.value, incremento.value);
+    }else{
+        decodificarCesar();
+    }
+    
+};
+
+function codificarCesar(texto,incremento){
+    texto = texto.split("");
+    //for + charcodeAt
+    //
+    console.log(texto);
+};
+
+function decodificarCesar(texto,incremento){
+
+};
 
 
 
 
-//var radioButton = document.getElementById('codificar')
 
-
-function cifra(string){
-    return 
-}
-
-function base64(string){
-    return
-}
 /* 
 criar var para pegar os valores
 
-criar as functions de codificar e decodificar
+criar as functions de codificar=  
+e decodificar= 
 adicionar function cifracesar
 adicionar function base64
 
